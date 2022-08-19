@@ -1,0 +1,18 @@
+$primary-color: #37231f;
+$secondary-color: #fe974c;
+@mixin transition{
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin flex($dir, $content: center, $items: center){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $content;
+    align-items: $items;
+}
+
+@mixin desktop{
+    @media(min-width: 992px){
+        @content;
+    }
+}
